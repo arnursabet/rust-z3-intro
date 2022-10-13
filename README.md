@@ -1,13 +1,21 @@
-mod arithmetic;
-mod boolean_logic;
-mod functions;
-mod getting_started;
-mod install_problem;
-mod list_compr;
-mod machine_arithmetic;
-mod puzzles;
-mod satisfiability_validity;
-mod solvers;
+# Rust Z3 API Tutorial Source Code
+
+Refer to the [Rust Z3 API Tutorial](https://arnur.netlify.app/z3-rust-intro) for the article.
+
+This is the first tutorial on the basics of the unofficial Rust Z3 binding. It covers the following topics:
+* Getting Started
+* Boolean Logic
+* Arithmetic
+* Machine Arithmetic
+* Functions
+* Solvers
+* Some Rust Hacks
+* Satisfiability and Validity
+* Applications: puzzles, install problem, linear programming
+
+## Running 
+To run the code examples, uncomment one of the lines in the main file.
+```rust
 fn main() {
     getting_started::run1();
     // getting_started::run2();
@@ -42,3 +50,11 @@ fn main() {
 
     // install_problem::run();
 }
+
+```
+Then, in your terminal:
+
+```
+cargo run
+```
+
